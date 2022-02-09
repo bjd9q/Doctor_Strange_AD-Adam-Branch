@@ -1,0 +1,85 @@
+@font-face {
+src: url("HoustonComicsPersonalUse-6Yea1.ttf");
+}
+@font-face {
+src: url("Dragonlord-WyJZn.otf");
+}
+.coste{
+ -fx-background-color: rgba(2,1,1,0.75);
+ -fx-background-radius: 5px;
+     -fx-font-size: 38px;
+}
+.circle{
+  -fx-font-family: 'Houston Comics Personal Use';
+    -fx-background-color:  rgba(0,0,0,0.95);
+    -fx-background-radius: 100px;
+}
+
+.poder{
+-fx-font-family: 'Dragonlord';
+ -fx-font-size: 88px;
+}
+
+.txtNumM{
+-fx-font-family: 'Dragonlord';
+ -fx-font-size: 48px;
+}
+
+.bg{
+    -fx-background-image: url("img/bgPersonaje.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-color:#151934;
+    -fx-background-size: contain;
+    -fx-background-position: center;
+    -fx-background-position: 0px 200px;
+}
+
+.btnEmpezar{
+  -fx-font-family: 'Houston Comics Personal Use';
+    -fx-font-size: 28px;
+}
+.txtAlias{
+-fx-font-family: 'Dragonlord';
+}
+
+.txtPersonaje{
+  -fx-font-size: 18px;
+  -fx-font-family: 'Houston Comics Personal Use';
+}
+
+.txtJugadores{
+  -fx-font-size: 58px;
+  -fx-font-family: 'Houston Comics Personal Use';
+}
+
+.txtAfilia{
+  -fx-font-size: 12px;
+  -fx-font-family: 'Houston Comics Personal Use';
+}
+.costeTxt{
+ -fx-font-size: 43px;
+  -fx-font-family: 'Houston Comics Personal Use';
+
+}
+
+.costeMoneda{
+    -fx-font-size: 62px;
+-fx-font-family: 'Dragonlord';}
+
+
+.btnSuperheroes{
+    -fx-background-color:#e5be01;
+    -fx-background-radius:0;
+}
+
+.btnSuperheroes:hover{
+-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0.5, 0.0, 0.0);
+-fx-background-color:#ed1d24;
+-fx-text-fill:white;
+}
+
+.btnSuperheroes:pressed{
+-fx-background-color:#EC1D24;
+-fx-text-fill:white;
+-fx-rotate:2;
+}

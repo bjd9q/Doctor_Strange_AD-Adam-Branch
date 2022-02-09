@@ -1,0 +1,27 @@
+@font-face {
+src: url("HoustonComicsPersonalUse-6Yea1.ttf");
+}
+@font-face {
+src: url("Dragonlord-WyJZn.otf");
+}
+
+.titulo{
+-fx-font-family: 'Dragonlord';
+}
+
+.txtEscenario{
+    -fx-font-family: 'Houston Comics Personal Use';
+}
+
+.btnSeleEscenario{
+    -fx-font-family: 'Houston Comics Personal Use';
+    -fx-font-size: 26px;
+}
+
+
+.bgEscenario{
+    -fx-background-image: url("img/background-escenario.jpg");
+     -fx-background-repeat: no-repeat;
+     -fx-background-size: cover;
+      -fx-background-position: center;
+}

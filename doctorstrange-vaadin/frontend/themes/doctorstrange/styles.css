@@ -1,0 +1,614 @@
+@import url('lumo-css-framework/all-classes.css');
+@import url('line-awesome/dist/line-awesome/css/line-awesome.min.css');
+@import url('@fontsource/coming-soon');    html {
+--lumo-font-family: Coming Soon;
+
+    }
+
+    [theme~="dark"] {
+      --lumo-base-color: hsl(214, 0%, 0%);
+
+    }
+@import url('lumo-css-framework/all-classes.css');
+@import url('line-awesome/dist/line-awesome/css/line-awesome.min.css');
+@import url('@fontsource/coming-soon');    html {
+--lumo-font-family: Coming Soon;
+
+    }
+
+    [theme~="dark"] {
+      --lumo-base-color: hsl(214, 0%, 0%);
+
+    }
+.main{
+       background-image: url("../images/main.jpg");
+       background-repeat: no-repeat;
+       background-size: contain;
+       background-color:black;
+       background-position: center;
+}
+.btnIniciar{
+margin-bottom: 4%;
+}
+.escenarioview{
+margin-top: 3%;
+}
+.base{
+margin-top: 5%;
+margin-left: 5%;
+margin-right: 5%;
+}
+.tituloEscenario{
+font-size: 30px;
+}
+
+.btnMenu1{
+color:black;
+background-color:orange;
+font-size:26px;
+width:110px;
+height:42px;
+border-radius:2px;
+
+}
+
+.btnMenu2{
+color:black;
+background-color:orange;
+font-size:26px;
+width:140px;
+height:42px;
+border-radius:2px;
+}
+
+.btnMenu3{
+color:black;
+background-color:orange;
+font-size:26px;
+width:80px;
+height:42px;
+border-radius:2px;
+}
+
+
+
+
+.btnMenu1:hover{
+text-decoration: none;
+font-size:28px;
+width:112px;
+height:44px;
+}
+
+.btnMenu2:hover{
+text-decoration: none;
+font-size:28px;
+width:142px;
+height:44px;
+}
+
+.btnMenu3:hover{
+text-decoration: none;
+font-size:28px;
+width:82px;
+height:44px;
+}
+
+.menu{
+       color:black;
+       background-image: url("../images/menu.jpg");
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-color:black;
+       background-position: center;
+}
+
+
+.costePersonaje{
+
+color:green;
+         margin-top:10%;
+          font-size:50px;
+          width:100%;
+          text-align:center;
+}
+
+.costePersonaje2{
+color:green;
+         margin-top:10%;
+          font-size:50px;
+          width:100%;
+          text-align:center;
+}
+
+.btnDoc{
+      width:20px;
+       height:100px;
+       background-image:url(https://scontent.fmad10-1.fna.fbcdn.net/v/t39.30808-6/272242233_1380986362360013_8993070668815793169_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=6_2HjhX9To4AX-vnmfa&_nc_ht=scontent.fmad10-1.fna&oh=00_AT_zp6YK1prgOm18nlMwgydT4OtajoRjaIWTwMhkZoSnaw&oe=61F86812);
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-color:orange;
+       cursor: pointer;
+}
+.btnThor{
+       background-image:url(https://scontent.fmad10-1.fna.fbcdn.net/v/t39.30808-6/272345539_1380986555693327_8687623597943082666_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=q4nF6RdcsOgAX-gPu8u&_nc_ht=scontent.fmad10-1.fna&oh=00_AT9QJGPMt7XXPALaFfIMZ_JCVoDMiQLRGXl2dq6VpFLlzw&oe=61F8EFA6);
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       width:20px;
+       height:100px;
+       background-color:orange;
+       cursor: pointer;
+}
+.btnSpider{
+      background-image:url(https://scontent.fmad10-2.fna.fbcdn.net/v/t39.30808-6/272248370_1380986512359998_816639381453190906_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=HlP4QGTnoOQAX9Pe2_f&_nc_ht=scontent.fmad10-2.fna&oh=00_AT82XtHM6Y2NRlaAj2EXeA2bmnqi-BJmPhlBATX_WXLIEg&oe=61F84178);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width:20px;
+      height:100px;
+      background-color:orange;
+      cursor: pointer;
+}
+.btnWol{
+       background-image:url(https://scontent.fmad10-2.fna.fbcdn.net/v/t39.30808-6/272189639_1380986585693324_6254853147805275017_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=QmjRQd1FbR8AX_NVcan&_nc_ht=scontent.fmad10-2.fna&oh=00_AT8j-LNeAnaMPSL0kSbHe_MQ6KKCTZAU7BSRRULpAwjb6w&oe=61F7BE75);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width:20px;
+      height:100px;
+      background-color:orange;
+      cursor: pointer;
+}
+.btnDead{
+      background-image:url(https://scontent.fmad10-1.fna.fbcdn.net/v/t39.30808-6/272251322_1380986432360006_3828524241386581442_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=730e14&_nc_ohc=NJKPkfFfLP8AX-06v5R&_nc_ht=scontent.fmad10-1.fna&oh=00_AT-b6rY-HB7_FeaiQDzxZjxcV9fzgpnAQVOEIgal_TBhzA&oe=61F8ED97);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width:20px;
+      height:100px;
+      background-color:orange;
+      cursor: pointer;
+}
+.btnCapi{
+       background-image:url(https://scontent.fmad10-1.fna.fbcdn.net/v/t39.30808-6/272252900_1380986342360015_7346721640604982976_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=pLzIHqlXry4AX8RttgF&_nc_ht=scontent.fmad10-1.fna&oh=00_AT_Big7IaqM4m3klnC-zq0vJv2HVsKg-vS8ug3FiECsw7A&oe=61F7CFAC);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width:20px;
+      height:100px;
+      background-color:orange;
+      cursor: pointer;
+}
+.btnLoki{
+     background-image:url(https://scontent.fmad10-1.fna.fbcdn.net/v/t39.30808-6/272199327_1380986495693333_1274404240533191870_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=y9H_tKHNtpIAX-3Fci9&tn=4zEnLeInd3iLYuRJ&_nc_ht=scontent.fmad10-1.fna&oh=00_AT8H1oOrWF4jcDq2kMoxJdaPNnY-3HLGjHSOoyN-ko6HPA&oe=61F7B85B);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     width:20px;
+     height:100px;
+     background-color:orange;
+     cursor: pointer;
+}
+.btnPunish{
+      background-image:url(https://scontent.fmad10-2.fna.fbcdn.net/v/t39.30808-6/272189716_1380986569026659_8779644899141377931_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=eyj8-o-RA4cAX_evaUD&_nc_oc=AQmsCb5ndT-NYwHYlFKwI-uhlBFSnRMlLXdnjQck3685FYFuGMtIJo9SuilnBvIkGzk&_nc_ht=scontent.fmad10-2.fna&oh=00_AT_MrACFmK9IhNDb4pCCmkcySlE-QxVNbuWEl4KzCQSrdQ&oe=61F91051);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width:20px;
+      height:100px;
+      background-color:orange;
+      cursor: pointer;
+}
+.btnPanther{
+       background-image:url(https://scontent.fmad10-2.fna.fbcdn.net/v/t39.30808-6/272200596_1380986499026666_8851328999914640680_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=730e14&_nc_ohc=M4Zl02l3kZ8AX-YcHB-&_nc_ht=scontent.fmad10-2.fna&oh=00_AT8gSGDXsfGDZk_UKFClsvp4i1xRrAJLUmsNB2OKCi65pA&oe=61F7B230);
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       width:20px;
+       height:100px;
+       background-color:orange;
+       cursor: pointer;
+}
+.btnCapMar{
+       background-image:url(https://scontent.fmad10-1.fna.fbcdn.net/v/t39.30808-6/272201796_1380986365693346_4548736114405380550_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=730e14&_nc_ohc=lo-scjT0-pIAX9oam7v&_nc_ht=scontent.fmad10-1.fna&oh=00_AT-jFMz9umpqXcFTgJNwr049W_oXCsRV1rPztqpN0hUyVw&oe=61F8C191);
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       width:20px;
+       height:100px;
+       background-color:orange;
+       cursor: pointer;
+}
+.btnHulk{
+       background-image:url(https://scontent.fmad10-2.fna.fbcdn.net/v/t39.30808-6/272214853_1380986435693339_6656616243542344024_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=730e14&_nc_ohc=UwfJYBOUqGsAX-vy-p_&_nc_ht=scontent.fmad10-2.fna&oh=00_AT91ehjMOZrPlkdN3PtauV2mpeZ-nIhTSaIGGO_J8e1IXg&oe=61F8E492);
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       width:20px;
+       height:100px;
+       background-color:orange;
+       cursor: pointer;
+}
+.btnIron{
+       background-image:url(https://scontent.fmad10-1.fna.fbcdn.net/v/t39.30808-6/272196923_1380986439026672_6250690826709580547_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=3WpQAmxFarwAX8WSgiZ&_nc_ht=scontent.fmad10-1.fna&oh=00_AT-BsSG3TyOpJJJ8BkaTS-f4C_cDwDOv2nIH19D9uZHH5g&oe=61F838C5);
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       width:20px;
+       height:100px;
+       background-color:orange;
+       cursor: pointer;
+}
+
+
+.btnDoc:hover{
+-o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+  box-shadow: 2px 4px 6px #FDFFEC;
+}
+.btnThor:hover{
+-o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+  box-shadow: 2px 4px 6px #FDFFEC;
+}
+.btnSpider:hover{
+-o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+  box-shadow: 2px 4px 6px #FDFFEC;
+}
+.btnWol:hover{
+-o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+  box-shadow: 2px 4px 6px #FDFFEC;
+}
+.btnDead:hover{
+-o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+  box-shadow: 2px 4px 6px #FDFFEC;
+}
+.btnCapi:hover{
+-o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+  box-shadow: 2px 4px 6px #FDFFEC;
+}
+.btnLoki:hover{
+-o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+  box-shadow: 2px 4px 6px #FDFFEC;
+}
+.btnPunish:hover{
+-o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+  box-shadow: 2px 4px 6px #FDFFEC;
+}
+.btnPanther:hover{
+-o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+  box-shadow: 2px 4px 6px #FDFFEC;
+}
+.btnCapMar:hover{
+-o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+  box-shadow: 2px 4px 6px #FDFFEC;
+}
+.btnHulk:hover{
+-o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+  box-shadow: 2px 4px 6px #FDFFEC;
+}
+.btnIron:hover{
+-o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+  box-shadow: 2px 4px 6px #FDFFEC;
+}
+
+
+
+.btnDoc:active{
+width:73px;
+-o-transition:.1s;
+  -ms-transition:.1s;
+  -moz-transition:.1s;
+  -webkit-transition:.1s;
+  transition:.1s;
+  box-shadow: 2px 2px 20px white;
+}
+.btnThor:active{
+   width:73px;
+  -o-transition:.1s;
+  -ms-transition:.1s;
+  -moz-transition:.1s;
+  -webkit-transition:.1s;
+  transition:.1s;
+  box-shadow: 2px 2px 20px white;
+}
+.btnSpider:active{
+   width:73px;
+  -o-transition:.1s;
+  -ms-transition:.1s;
+  -moz-transition:.1s;
+  -webkit-transition:.1s;
+  transition:.1s;
+  box-shadow: 2px 2px 20px white;
+}
+.btnWol:active{
+   width:73px;
+  -o-transition:.1s;
+  -ms-transition:.1s;
+  -moz-transition:.1s;
+  -webkit-transition:.1s;
+  transition:.1s;
+  box-shadow: 2px 2px 20px white;
+}
+.btnDead:active{
+   width:73px;
+  -o-transition:.1s;
+  -ms-transition:.1s;
+  -moz-transition:.1s;
+  -webkit-transition:.1s;
+  transition:.1s;
+  box-shadow: 2px 2px 20px white;
+}
+.btnCapi:active{
+   width:73px;
+  -o-transition:.1s;
+  -ms-transition:.1s;
+  -moz-transition:.1s;
+  -webkit-transition:.1s;
+  transition:.1s;
+  box-shadow: 2px 2px 20px white;
+}
+.btnLoki:active{
+   width:73px;
+  -o-transition:.1s;
+  -ms-transition:.1s;
+  -moz-transition:.1s;
+  -webkit-transition:.1s;
+  transition:.1s;
+  box-shadow: 2px 2px 20px white;
+}
+.btnPunish:active{
+   width:73px;
+  -o-transition:.1s;
+  -ms-transition:.1s;
+  -moz-transition:.1s;
+  -webkit-transition:.1s;
+  transition:.1s;
+  box-shadow: 2px 2px 20px white;
+}
+.btnPanther:active{
+   width:73px;
+  -o-transition:.1s;
+  -ms-transition:.1s;
+  -moz-transition:.1s;
+  -webkit-transition:.1s;
+  transition:.1s;
+  box-shadow: 2px 2px 20px white;
+}
+.btnCapMar:active{
+   width:73px;
+  -o-transition:.1s;
+  -ms-transition:.1s;
+  -moz-transition:.1s;
+  -webkit-transition:.1s;
+  transition:.1s;
+  box-shadow: 2px 2px 20px white;
+}
+.btnHulk:active{
+   width:73px;
+  -o-transition:.1s;
+  -ms-transition:.1s;
+  -moz-transition:.1s;
+  -webkit-transition:.1s;
+  transition:.1s;
+  box-shadow: 2px 2px 20px white;
+}
+.btnIron:active{
+   width:73px;
+  -o-transition:.1s;
+  -ms-transition:.1s;
+  -moz-transition:.1s;
+  -webkit-transition:.1s;
+  transition:.1s;
+  box-shadow: 2px 2px 20px white;
+}
+
+
+
+
+
+.j1p2p3{
+  margin-left:55%;
+}
+
+.j2p2p3{
+margin-right:55%;
+}
+
+.personaje-view{
+       width:100%;
+       height:100%;
+       justify-content: center;
+       align-items: center;
+}
+
+.txt2{
+       font-size:40px;
+       width:100%;
+       margin-left:90%;
+}
+
+
+.txt{
+      font-size:56px;
+
+}
+
+.x{
+background-color:red;
+font-size:26px;
+}
+
+.nombreP1{
+border-radius:5px;
+position:relative;
+background-color: rgba(235, 20, 28, 0.4);
+ width:100%;
+ font-size:20px;
+ text-align:center;
+ text-overflow: clip;
+}
+
+.nombreP2{
+border-radius:5px;
+position:relative;
+background-color: rgba(235, 20, 28, 0.4);
+ width:100%;
+ font-size:20px;
+ text-align:center;
+  text-overflow: clip;
+}
+
+.coinCon{
+margin-bottom:10%;
+font-size:40px;
+color:yellow;
+}
+.coinCon2{
+margin-bottom:10%;
+font-size:40px;
+color:yellow;
+}
+
+.numeroP1{
+   width:100%;
+   font-size:65px;
+   text-align:center;
+  margin-bottom:20px;
+}
+
+.numeroP2{
+ width:100%;
+ font-size:65px;
+ text-align:center;
+  margin-bottom:20px;
+}
+
+.btnIniciar{
+  cursor: pointer;
+  position:absolute;
+  width:10%;
+  bottom:0px;
+  text-align: center;
+  color:white;
+  background-color:orange;
+}
+
+.btnIniciar:hover {
+cursor: pointer;
+font-size:15px;
+}
+.heartImg2{
+transform: scaleX(-1);
+}
+
+.botones{
+cursor: pointer;
+width:100%;
+height:60px;
+color:white;
+font-size:34px;
+}
+
+.btnJ2{
+margin-right:900px;
+}
+.btnJ1{
+margin-right:50%;
+}
+
+.div{
+font-size:26px;
+width:100%;
+}
+
+.btnPartida{
+height:60px;
+width:180px;
+cursor: pointer;
+font-size:15px;
+font-size:22px;
+color:orange;
+transition:transform 1s ease-in;
+animation:left-to-right 3s ease-in forwards;
+
+}
+
+.btnPartida:hover{
+cursor: pointer;
+color:#90ee90;
+}
+
+@keyframes left-to-right{
+
+50%{
+background-color:black;
+transform:translateX(60%);
+  }
+
+  33%{
+transform:translateX(100%);
+  }
+
+  0%{
+transform:translateX(0%);
+  }
+   110%{
+transform:translateX(50%);
+  }  50%{
+transform:translateX(10%);
+  }
+}
+
+
+
+
+

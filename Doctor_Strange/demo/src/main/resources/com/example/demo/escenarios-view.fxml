@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="766.0" prefWidth="1366.0" styleClass="bgEscenario" stylesheets="@../../../assets/css/escenario.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.EscenarioController">
+   <children>
+      <BorderPane fx:id="borderPane" prefHeight="200.0" prefWidth="200.0">
+         <bottom>
+            <VBox alignment="CENTER" prefHeight="125.0" prefWidth="1360.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <center>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="502.0" prefWidth="659.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </center>
+         <top>
+            <Label prefHeight="55.0" prefWidth="158.0" text="Label" BorderPane.alignment="CENTER" />
+         </top>
+      </BorderPane>
+      <ImageView fx:id="imagenEscenario" fitHeight="793.0" fitWidth="1357.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/css/img/3.jpg" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Pane layoutX="187.0" layoutY="365.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="84.0" prefWidth="1000.0">
+               <children>
+                  <Pane layoutY="176.0" prefHeight="94.0" prefWidth="1004.0">
+                     <children>
+                        <ProgressBar fx:id="progressBar" layoutX="52.0" layoutY="173.0" prefHeight="25.0" prefWidth="898.0" progress="0.0" stylesheets="@../../../assets/css/menu.css" visible="false" />
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Button fx:id="btDerecha" layoutX="1303.0" layoutY="352.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: orange;" text="&gt;">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btIzquierda" layoutY="352.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: orange;" text="&lt;">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label fx:id="tituloEscenario" alignment="CENTER" layoutX="499.0" prefHeight="80.0" prefWidth="363.0" style="-fx-background-color: black;" styleClass="titulo" stylesheets="@../../../assets/css/escenario.css" text="Sanctum Sanctorum" textFill="WHITE">
+               <font>
+                  <Font size="61.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+            </Label>
+            <VBox layoutX="265.0" layoutY="597.0" prefHeight="50.0" prefWidth="843.0">
+               <children>
+                  <HBox alignment="TOP_CENTER" prefHeight="18.0" prefWidth="908.0">
+                     <children>
+                        <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="362.0" style="-fx-background-color: black;" styleClass="txtEscenario" stylesheets="@../../../assets/css/escenario.css" text="MONEDAS" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefWidth="300.0" style="-fx-background-color: black;" styleClass="txtEscenario" stylesheets="@../../../assets/css/escenario.css" text="JUGADORES" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="353.0" style="-fx-background-color: black;" styleClass="txtEscenario" stylesheets="@../../../assets/css/escenario.css" text="VIDA" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="TOP_CENTER" prefHeight="71.0" prefWidth="877.0">
+                     <children>
+                        <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="365.0" style="-fx-background-color: black;" styleClass="txtEscenario" stylesheets="@../../../assets/css/escenario.css" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefWidth="300.0" style="-fx-background-color: black;" styleClass="txtEscenario" stylesheets="@../../../assets/css/escenario.css" text="0000" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="353.0" style="-fx-background-color: black;" styleClass="txtEscenario" stylesheets="@../../../assets/css/escenario.css" text="0000" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Button fx:id="btSeleccionar" layoutX="613.0" layoutY="650.0" mnemonicParsing="false" style="-fx-background-color: orange;" styleClass="btnSeleEscenario" stylesheets="@../../../assets/css/escenario.css" text="Seleccionar">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</StackPane>

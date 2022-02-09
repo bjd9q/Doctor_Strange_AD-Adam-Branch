@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackPane" prefHeight="800.0" prefWidth="1360.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.EscenarioController">
+   <children>
+      <BorderPane fx:id="borderPane" prefHeight="200.0" prefWidth="200.0">
+         <bottom>
+            <VBox alignment="CENTER" prefHeight="125.0" prefWidth="1360.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="tituloEscenario" text="Titulo" textFill="WHITE">
+                     <font>
+                        <Font size="23.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btSeleccionar" mnemonicParsing="false" text="Seleccionar">
+                     <VBox.margin>
+                        <Insets bottom="30.0" />
+                     </VBox.margin></Button>
+               </children>
+            </VBox>
+         </bottom>
+         <center>
+            <ImageView fx:id="imagenEscenario" fitHeight="588.0" fitWidth="902.0" pickOnBounds="true" BorderPane.alignment="CENTER" />
+         </center>
+         <left>
+            <Button fx:id="btIzquierda" mnemonicParsing="false" text="&lt;" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <Button fx:id="btDerecha" mnemonicParsing="false" text="&gt;" BorderPane.alignment="CENTER" />
+         </right>
+         <top>
+            <Label text="SELECCIONA UN ESCENARIO" textFill="WHITE" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets top="30.0" />
+               </BorderPane.margin>
+            </Label>
+         </top>
+      </BorderPane>
+   </children>
+</StackPane>

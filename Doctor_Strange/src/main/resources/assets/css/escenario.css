@@ -1,0 +1,6 @@
+.bgEscenario{
+    -fx-background-image: url("img/btEscenario.jpg");
+     -fx-background-repeat: no-repeat;
+     -fx-background-size: cover;
+      -fx-background-position: center;
+}

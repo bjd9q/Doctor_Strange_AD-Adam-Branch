@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+
+<StackPane fx:id="parentContainer" prefHeight="402.0" prefWidth="734.0" styleClass="background" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.MediaController">
+<BorderPane fx:id="borderV" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;">
+      <center>
+         <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+            <children>
+            <MediaView fx:id="video" fitHeight="200.0" fitWidth="200.0" />
+            </children>
+         </VBox>
+      </center>
+</BorderPane>
+</StackPane>

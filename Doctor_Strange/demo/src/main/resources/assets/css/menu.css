@@ -1,0 +1,53 @@
+@font-face {
+src: url("HoustonComicsPersonalUse-6Yea1.ttf");
+}
+
+.menuItem{
+    -fx-font-family: 'Houston Comics Personal Use';
+    -fx-font-size: 20px;
+    -fx-background-color:#e5be01;
+    -fx-background-radius:0;
+    -fx-border-color: #5e2129;
+    -fx-border-width: 2 2 2 2;
+    -fx-background-insets: 0;
+}
+
+.menuItem:hover{
+    -fx-font-family: 'Houston Comics Personal Use';
+    -fx-font-size: 22px;
+    -fx-background-color:#e5be01;
+    -fx-background-radius:0;
+    -fx-border-color: #5e2129;
+    -fx-border-width: 2 2 2 2;
+    -fx-background-insets: 0;
+}
+
+.menuItem:pressed{
+         -fx-font-size: 24px;
+}
+
+.progress-bar {
+    -fx-accent: rgba(0, 138, 230, 0.85);
+}
+
+.progress-bar .bar {
+    -fx-padding: 1px;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+.progress-bar > .track {
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-text-box-border: transparent;
+    -fx-control-inner-background: transparent;
+    -fx-background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.menuBackground{
+    -fx-background-image: url("img/bgMenu.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}

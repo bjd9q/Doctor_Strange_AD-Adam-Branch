@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackPane" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" styleClass="bg" stylesheets="@../../../assets/css/personaje.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.PersonajeController">
+   <children>
+      <BorderPane StackPane.alignment="BOTTOM_CENTER">
+         <top>
+            <HBox alignment="TOP_CENTER" prefHeight="227.0" prefWidth="1366.0" spacing="340.0" BorderPane.alignment="TOP_CENTER">
+               <children>
+                  <VBox prefHeight="330.0" prefWidth="240.0">
+                     <children>
+                        <Label prefHeight="74.0" prefWidth="60.0" styleClass="txtJugadores" text="J1" textFill="WHITE">
+                           <font>
+                              <Font size="68.0" />
+                           </font>
+                        </Label>
+                        <HBox fx:id="boxCoin1" alignment="CENTER" prefHeight="44.0" prefWidth="240.0" visible="false">
+                           <children>
+                              <ImageView fitHeight="62.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../assets/img/goldCoin2.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="monedasJ1" alignment="CENTER" prefHeight="40.0" prefWidth="80.0" styleClass="txtNumM" stylesheets="@../../../assets/css/personaje.css" textFill="WHITE">
+                                 <font>
+                                    <Font size="34.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="227.0" prefWidth="428.0" spacing="14.0">
+                     <children>
+                        <Button fx:id="btEmpezar" alignment="CENTER" mnemonicParsing="false" prefHeight="38.0" prefWidth="141.0" style="-fx-background-color: #F39205;" styleClass="btnEmpezar" stylesheets="@../../../assets/css/personaje.css" text="Empezar" visible="false">
+                           <font>
+                              <Font size="28.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="test" mnemonicParsing="false" prefHeight="100.0" prefWidth="254.0" style="-fx-background-color: red;" styleClass="txtPersonaje" stylesheets="@../../../assets/css/personaje.css" text="Iniciar" textFill="WHITE">
+                           <font>
+                              <Font size="32.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_RIGHT" prefHeight="211.0" prefWidth="244.0">
+                     <children>
+                        <Label maxWidth="60.0" minWidth="46.0" prefHeight="74.0" prefWidth="60.0" styleClass="txtJugadores" stylesheets="@../../../assets/css/personaje.css" text="J2" textFill="WHITE">
+                           <font>
+                              <Font size="68.0" />
+                           </font>
+                        </Label>
+                        <HBox fx:id="boxCoin2" alignment="CENTER" prefHeight="60.0" prefWidth="244.0" visible="false">
+                           <children>
+                              <Label fx:id="monedasJ2" alignment="CENTER" prefHeight="40.0" prefWidth="90.0" styleClass="txtNumM" stylesheets="@../../../assets/css/personaje.css" textFill="WHITE">
+                                 <font>
+                                    <Font size="34.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="62.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../assets/img/goldCoin2.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets top="20.0" />
+               </BorderPane.margin></HBox>
+         </top>
+         <left>
+            <HBox fx:id="cajaDer" alignment="BOTTOM_CENTER" disable="true" prefHeight="521.0" prefWidth="683.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox fx:id="vboxPersonajes" alignment="BOTTOM_CENTER" minWidth="-Infinity" prefHeight="521.0" prefWidth="306.0">
+                     <children>
+                        <GridPane alignment="CENTER" hgap="1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="367.0" prefWidth="320.0" vgap="1.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Button fx:id="btnDoc" mnemonicParsing="false" prefHeight="90.0" prefWidth="80.0" styleClass="btnSuperheroes" stylesheets="@../../../assets/css/personaje.css">
+                                 <graphic>
+                                    <ImageView fitHeight="80.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../assets/img/d.png" />
+                                       </image>
+                                       <viewport>
+                                          <Rectangle2D />
+                                       </viewport>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <font>
+                                    <Font size="1.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="btnSpider" mnemonicParsing="false" prefHeight="90.0" prefWidth="80.0" styleClass="btnSuperheroes" stylesheets="@../../../assets/css/personaje.css" GridPane.columnIndex="1">
+                                 <graphic>
+                                    <ImageView fitHeight="80.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../assets/img/spiderHead.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button fx:id="btnThor" mnemonicParsing="false" prefHeight="90.0" prefWidth="80.0" styleClass="btnSuperheroes" stylesheets="@../../../assets/css/personaje.css" GridPane.columnIndex="2">
+                                 <graphic>
+                                    <ImageView fitHeight="80.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../assets/img/thorFace.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button fx:id="btnIron" mnemonicParsing="false" prefHeight="90.0" prefWidth="80.0" styleClass="btnSuperheroes" stylesheets="@../../../assets/css/personaje.css" GridPane.columnIndex="3">
+                                 <graphic>
+                                    <ImageView fitHeight="80.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../assets/img/ironFace.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button fx:id="btnDeadpool" mnemonicParsing="false" prefHeight="90.0" prefWidth="80.0" styleClass="btnSuperheroes" stylesheets="@../../../assets/css/personaje.css" GridPane.rowIndex="1">
+                                 <graphic>
+                                    <ImageView fitHeight="80.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../assets/img/deadFace.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button fx:id="btnWol" mnemonicParsing="false" prefHeight="90.0" prefWidth="80.0" styleClass="btnSuperheroes" stylesheets="@../../../assets/css/personaje.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <graphic>
+                                    <ImageView fitHeight="80.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../assets/img/wolFace.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button fx:id="btnPunish" mnemonicParsing="false" prefHeight="90.0" prefWidth="80.0" styleClass="btnSuperheroes" stylesheets="@../../../assets/css/personaje.css" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                 <graphic>
+                                    <ImageView fitHeight="80.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../assets/img/tpuniFace.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button fx:id="btnCapi" mnemonicParsing="false" prefHeight="90.0" prefWidth="80.0" styleClass="btnSuperheroes" stylesheets="@../../../assets/css/personaje.css" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                 <graphic>
+                                    <ImageView fitHeight="80.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../assets/img/capFace.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button fx:id="btnLoki" mnemonicParsing="false" prefHeight="90.0" prefWidth="80.0" styleClass="btnSuperheroes" stylesheets="@../../../assets/css/personaje.css" GridPane.rowIndex="2">
+                                 <graphic>
+                                    <ImageView fitHeight="80.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../assets/img/lokiFace.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button fx:id="btnHulk" mnemonicParsing="false" prefHeight="90.0" prefWidth="80.0" styleClass="btnSuperheroes" stylesheets="@../../../assets/css/personaje.css" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <graphic>
+                                    <ImageView fitHeight="80.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../assets/img/hulkFace.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button fx:id="btnCapMar" mnemonicParsing="false" prefHeight="90.0" prefWidth="80.0" styleClass="btnSuperheroes" stylesheets="@../../../assets/css/personaje.css" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                 <graphic>
+                                    <ImageView fitHeight="80.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../assets/img/capMarvel.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button fx:id="btnPanther" mnemonicParsing="false" prefHeight="90.0" prefWidth="80.0" styleClass="btnSuperheroes" stylesheets="@../../../assets/css/personaje.css" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                 <graphic>
+                                    <ImageView fitHeight="80.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../assets/img/pantherFace.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                           </children>
+                        </GridPane>
+                        <VBox alignment="BOTTOM_CENTER" prefHeight="247.0" prefWidth="315.0">
+                           <children>
+                              <VBox id="coste" fx:id="vboxCoste" alignment="CENTER" prefHeight="83.0" prefWidth="290.0" styleClass="coste" stylesheets="@../../../assets/css/personaje.css" visible="false">
+                                 <children>
+                                    <Label prefHeight="90.0" prefWidth="110.0" styleClass="costeTxt" stylesheets="@../../../assets/css/personaje.css" text="coste" textFill="WHITE">
+                                       <font>
+                                          <Font size="43.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="coste" alignment="CENTER" prefHeight="80.0" prefWidth="180.0" styleClass="costeMoneda" stylesheets="@../../../assets/css/personaje.css" textAlignment="CENTER" textFill="WHITE">
+                                       <font>
+                                          <Font size="62.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="516.0" prefWidth="379.0">
+                     <children>
+                        <ImageView fx:id="imgPlayerOne" fitHeight="460.0" fitWidth="300.0" layoutX="41.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true" />
+                        <Pane fx:id="J1P3" layoutX="282.0" layoutY="-45.0" prefHeight="100.0" prefWidth="90.0" style="-fx-background-color: #F39205; -fx-border-color: #D41000;" visible="false">
+                           <children>
+                              <ImageView fx:id="imgPers3J1" fitHeight="90.0" fitWidth="90.0" layoutX="10.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                        </Pane>
+                        <Pane fx:id="J1P2" layoutX="189.0" layoutY="-45.0" prefHeight="100.0" prefWidth="90.0" style="-fx-background-color: #F39205; -fx-border-color: #D41000;" visible="false">
+                           <children>
+                              <ImageView fx:id="imgPers2J1" fitHeight="90.0" fitWidth="90.0" layoutX="10.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                        </Pane>
+                        <Label fx:id="aliasSuperheroe" alignment="CENTER" layoutX="2.0" layoutY="338.0" prefHeight="47.0" prefWidth="374.0" style="-fx-background-color: #ED1D24;" styleClass="txtPersonaje" stylesheets="@../../../assets/css/personaje.css" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="afiliacion" alignment="CENTER" layoutX="56.0" layoutY="385.0" prefHeight="32.0" prefWidth="263.0" style="-fx-background-color: #910f13;" styleClass="txtAfilia" stylesheets="@../../../assets/css/personaje.css" textAlignment="CENTER" textFill="WHITE" />
+                        <Pane layoutX="142.0" layoutY="420.0" prefHeight="93.0" prefWidth="96.0" styleClass="circle" stylesheets="@../../../assets/css/personaje.css">
+                           <children>
+                              <Label alignment="CENTER" layoutX="15.0" layoutY="5.0" prefHeight="64.0" prefWidth="65.0" styleClass="poder" stylesheets="@../../../assets/css/personaje.css" text="80" textFill="WHITE">
+                                 <font>
+                                    <Font size="79.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Pane>
+               </children>
+            </HBox>
+         </left>
+         <right>
+            <HBox fx:id="cajaIzq" alignment="BOTTOM_CENTER" disable="true" prefHeight="521.0" prefWidth="683.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="BOTTOM_CENTER" prefHeight="521.0" prefWidth="684.0">
+                     <children>
+                        <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="516.0" prefWidth="379.0">
+                           <children>
+                              <ImageView fx:id="J2P1" fitHeight="460.0" fitWidth="300.0" layoutX="34.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true" />
+                              <Pane fx:id="J2P2" layoutX="95.0" layoutY="-45.0" prefHeight="100.0" prefWidth="90.0" style="-fx-background-color: #F39205; -fx-border-color: #D41000;" visible="false">
+                                 <children>
+                                    <ImageView fx:id="imgPers2J2" fitHeight="90.0" fitWidth="90.0" layoutX="10.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" />
+                                 </children>
+                              </Pane>
+                              <Pane fx:id="J2P3" layoutX="2.0" layoutY="-45.0" prefHeight="100.0" prefWidth="90.0" style="-fx-background-color: #F39205; -fx-border-color: #D41000;" visible="false">
+                                 <children>
+                                    <ImageView fx:id="imgPers3J2" fitHeight="90.0" fitWidth="90.0" layoutX="10.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" />
+                                 </children>
+                              </Pane>
+                              <Label fx:id="aliasSuperheroe1" alignment="CENTER" layoutX="-1.0" layoutY="338.0" prefHeight="47.0" prefWidth="374.0" style="-fx-background-color: #ED1D24;" styleClass="txtPersonaje" stylesheets="@../../../assets/css/personaje.css" textAlignment="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold Italic" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="afiliacion1" alignment="CENTER" layoutX="61.0" layoutY="384.0" prefHeight="32.0" prefWidth="263.0" style="-fx-background-color: #910f13;" styleClass="txtAfilia" stylesheets="@../../../assets/css/personaje.css" textAlignment="CENTER" textFill="WHITE" />
+                              <Pane layoutX="144.0" layoutY="419.0" prefHeight="93.0" prefWidth="96.0" styleClass="circle" stylesheets="@../../../assets/css/personaje.css">
+                                 <children>
+                                    <Label id="poder" alignment="CENTER" layoutX="15.0" layoutY="5.0" prefHeight="64.0" prefWidth="65.0" styleClass="poder" text="80" textFill="WHITE">
+                                       <font>
+                                          <Font size="85.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Pane>
+                        <VBox fx:id="vboxPersonajes1" alignment="BOTTOM_CENTER" minWidth="-Infinity" prefHeight="521.0" prefWidth="308.0">
+                           <children>
+                              <GridPane fx:id="grid2" alignment="CENTER" disable="true" hgap="1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="367.0" prefWidth="320.0" vgap="1.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Button fx:id="btnIron2" mnemonicParsing="false" prefHeight="90.0" prefWidth="80.0" styleClass="btnSuperheroes" stylesheets="@../../../assets/css/personaje.css">
+                                       <graphic>
+                                          <ImageView fitHeight="80.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../assets/img/ironFace.png" />
+                                             </image>
+                                             <viewport>
+                                                <Rectangle2D />
+                                             </viewport>
+                                          </ImageView>
+                                       </graphic>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <font>
+                                          <Font size="1.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="btnThor2" mnemonicParsing="false" prefHeight="90.0" prefWidth="80.0" styleClass="btnSuperheroes" stylesheets="@../../../assets/css/personaje.css" GridPane.columnIndex="1">
+                                       <graphic>
+                                          <ImageView fitHeight="80.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../assets/img/thorFace.png" />
+                                             </image>
+                                             <viewport>
+                                                <Rectangle2D />
+                                             </viewport>
+                                          </ImageView>
+                                       </graphic>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <Button fx:id="btnSpider2" mnemonicParsing="false" prefHeight="90.0" prefWidth="80.0" styleClass="btnSuperheroes" stylesheets="@../../../assets/css/personaje.css" GridPane.columnIndex="2">
+                                       <graphic>
+                                          <ImageView fitHeight="80.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../assets/img/spiderHead.png" />
+                                             </image>
+                                             <viewport>
+                                                <Rectangle2D />
+                                             </viewport>
+                                          </ImageView>
+                                       </graphic>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <Button fx:id="btnDoc2" mnemonicParsing="false" prefHeight="90.0" prefWidth="80.0" styleClass="btnSuperheroes" stylesheets="@../../../assets/css/personaje.css" GridPane.columnIndex="3">
+                                       <graphic>
+                                          <ImageView fitHeight="80.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../assets/img/d.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <Button fx:id="btnCapi2" mnemonicParsing="false" prefHeight="90.0" prefWidth="80.0" styleClass="btnSuperheroes" stylesheets="@../../../assets/css/personaje.css" GridPane.rowIndex="1">
+                                       <graphic>
+                                          <ImageView fitHeight="80.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../assets/img/capFace.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <Button fx:id="btnPunish2" mnemonicParsing="false" prefHeight="90.0" prefWidth="80.0" styleClass="btnSuperheroes" stylesheets="@../../../assets/css/personaje.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <graphic>
+                                          <ImageView fitHeight="80.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../assets/img/tpuniFace.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <Button fx:id="btnWol2" mnemonicParsing="false" prefHeight="90.0" prefWidth="80.0" styleClass="btnSuperheroes" stylesheets="@../../../assets/css/personaje.css" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                       <graphic>
+                                          <ImageView fitHeight="80.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../assets/img/wolFace.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <Button fx:id="btnDead2" mnemonicParsing="false" prefHeight="90.0" prefWidth="80.0" styleClass="btnSuperheroes" stylesheets="@../../../assets/css/personaje.css" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                       <graphic>
+                                          <ImageView fitHeight="80.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../assets/img/deadFace.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <Button fx:id="btnPanther2" mnemonicParsing="false" prefHeight="90.0" prefWidth="80.0" styleClass="btnSuperheroes" stylesheets="@../../../assets/css/personaje.css" GridPane.rowIndex="2">
+                                       <graphic>
+                                          <ImageView fitHeight="80.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../assets/img/pantherFace.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <Button fx:id="btnCapMar2" mnemonicParsing="false" prefHeight="90.0" prefWidth="80.0" styleClass="btnSuperheroes" stylesheets="@../../../assets/css/personaje.css" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                       <graphic>
+                                          <ImageView fitHeight="80.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../assets/img/capMarvel.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <Button fx:id="btnHulk2" mnemonicParsing="false" prefHeight="90.0" prefWidth="80.0" styleClass="btnSuperheroes" stylesheets="@../../../assets/css/personaje.css" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                       <graphic>
+                                          <ImageView fitHeight="80.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../assets/img/hulkFace.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                    <Button fx:id="btnLoki2" mnemonicParsing="false" prefHeight="90.0" prefWidth="80.0" styleClass="btnSuperheroes" stylesheets="@../../../assets/css/personaje.css" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                       <graphic>
+                                          <ImageView fitHeight="80.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../assets/img/lokiFace.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Button>
+                                 </children>
+                              </GridPane>
+                              <VBox alignment="BOTTOM_CENTER" prefHeight="247.0" prefWidth="309.0">
+                                 <children>
+                                    <VBox fx:id="vboxCoste1" alignment="CENTER" prefHeight="96.0" prefWidth="271.0" styleClass="coste" visible="false">
+                                       <children>
+                                          <Label prefHeight="90.0" prefWidth="110.0" styleClass="costeTxt" stylesheets="@../../../assets/css/personaje.css" text="coste" textFill="WHITE">
+                                             <font>
+                                                <Font size="43.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="coste2" alignment="CENTER" prefHeight="80.0" prefWidth="180.0" styleClass="costeMoneda" stylesheets="@../../../assets/css/personaje.css" textFill="WHITE">
+                                             <font>
+                                                <Font size="62.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </right>
+      </BorderPane>
+   </children>
+</StackPane>

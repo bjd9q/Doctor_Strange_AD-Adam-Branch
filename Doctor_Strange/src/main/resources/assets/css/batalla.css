@@ -1,0 +1,6 @@
+.bgBatalla{
+    -fx-background-image: url("img/campoBatalla.jpeg");
+     -fx-background-repeat: no-repeat;
+     -fx-background-size: cover;
+      -fx-background-position: center;
+}
