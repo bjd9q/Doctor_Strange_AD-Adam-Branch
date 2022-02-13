@@ -541,6 +541,14 @@ color:yellow;
   color:white;
   background-color:orange;
 }
+.m{
+background-color:red;
+}
+
+.h1{
+background-color:blue;
+}
+
 
 .btnIniciar:hover {
 cursor: pointer;

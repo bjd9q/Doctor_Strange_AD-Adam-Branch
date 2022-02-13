@@ -30,6 +30,7 @@ public class MongoDB {
         MongoCollection<Document> collection = db.getCollection("Escenarios");
         Document findDocument = new Document("_id", nombreEscenario);
 
+
         for (Document document : collection.find(findDocument)) {
             monedasIniciales = document.getInteger("Monedas_iniciales");
             numJugadores = document.getInteger("Numero_jugadores");
@@ -78,6 +79,7 @@ public class MongoDB {
         ArrayList<Integer> parrillaPoderes = new ArrayList<>();
         List<Document> superheroes = new ArrayList<>();
         allHeroes = new ArrayList<>();
+
 
         MongoCollection<Document> collection = db.getCollection("SuperHeroesEnteros");
 
